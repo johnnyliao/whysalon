@@ -1,0 +1,5 @@
+<VirtualHost *:80>
+    Alias /static /var/www/django/whysalon/static
+    Alias /media /var/www/django/whysalon/media
+    WSGIScriptAlias / /var/www/django/whysalon/wsgi.py
+</VirtualHost>
