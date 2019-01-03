@@ -5,28 +5,27 @@ from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin as DjangoUserAdmin, UserChangeForm as DjangoUserChangeForm
 from django.contrib.auth.forms import UserCreationForm as DjangoUserCreationForm
 from home.models import IndexBanner, IndexFashion, IndexNews, IndexRecommend, IndexSale, IndexHot, IndexMap
-from salmonella.admin import SalmonellaMixin
 
-class IndexBannerAdmin(SalmonellaMixin, admin.ModelAdmin):
+class IndexBannerAdmin(admin.ModelAdmin):
 	list_display = ['name', 'image_tag']
 
-class IndexFashionAdmin(SalmonellaMixin, admin.ModelAdmin):
+class IndexFashionAdmin(admin.ModelAdmin):
 	list_display = ['title', 'image_tag']
 
-class IndexNewsAdmin(SalmonellaMixin, admin.ModelAdmin):
+class IndexNewsAdmin(admin.ModelAdmin):
     list_display = ["title"]
     #salmonella_fields  = ["banner", "movie", "brand"]
 
-class IndexRecommendAdmin(SalmonellaMixin, admin.ModelAdmin):
+class IndexRecommendAdmin(admin.ModelAdmin):
     list_display = ["title", "image_tag"]
 
-class IndexSaleAdmin(SalmonellaMixin, admin.ModelAdmin):
+class IndexSaleAdmin(admin.ModelAdmin):
     list_display = ["title", "image_tag"]
 
-class IndexHotAdmin(SalmonellaMixin, admin.ModelAdmin):
+class IndexHotAdmin(admin.ModelAdmin):
     list_display = ["title", "image_tag"]
 
-class IndexMapAdmin(SalmonellaMixin, admin.ModelAdmin):
+class IndexMapAdmin(admin.ModelAdmin):
     list_display = ["title", "llat", "llong"]
 
 #admin.site.register(S3Data, S3DataAdmin)
