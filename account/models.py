@@ -26,5 +26,4 @@ GENDER_CHOICES = (
 class User(AbstractUser):
 	nickname = models.CharField(_(u"名稱"), max_length=30, default="", null=True, blank=True)
 	phone_number = models.CharField(_(u"電話號碼"), max_length=30, default="", null=True, blank=True)
-	email = models.CharField(_(u"email"), max_length=100, null=True, blank=True)
 
