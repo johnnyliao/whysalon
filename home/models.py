@@ -14,7 +14,6 @@ from django.core.exceptions import ObjectDoesNotExist
 from django.contrib.sites.models import Site
 
 import urlparse, settings
-from cart.models import Brand
 from django.utils import simplejson
 
 class IndexBanner(models.Model):
