@@ -26,7 +26,7 @@ class IndexSaleAdmin(SalmonellaMixin, admin.ModelAdmin):
 class IndexHotAdmin(SalmonellaMixin, admin.ModelAdmin):
     list_display = ["title", "image_tag"]
 
-class IndexＭapAdmin(SalmonellaMixin, admin.ModelAdmin):
+class IndexMapAdmin(SalmonellaMixin, admin.ModelAdmin):
     list_display = ["title", "llat", "llong"]
 
 #admin.site.register(S3Data, S3DataAdmin)
