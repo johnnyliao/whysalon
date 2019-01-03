@@ -6,7 +6,7 @@ DATABASES = {
         "ENGINE": "django.db.backends.mysql",
         "NAME": "whysalon",
         "USER": "root",
-        "PASSWORD": "",
+        "PASSWORD": "liao12345",
         "HOST": "127.0.0.1",
         "PORT": "",
     }
