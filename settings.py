@@ -16,7 +16,7 @@ SITE_TAGLINE = ""
 # overriding. Please consult the settings documentation for a full list
 # of settings Mezzanine implements:
 # http://mezzanine.jupo.org/docs/configuration.html#default-settings
-
+from django.utils.translation import ugettext_lazy as _
 # Controls the ordering and grouping of the admin menu.
 #
 ADMIN_MENU_ORDER = (
