@@ -26,9 +26,5 @@ GENDER_CHOICES = (
 class User(AbstractUser):
 	nickname = models.CharField(_(u"名稱"), max_length=30, default="", null=True, blank=True)
 	phone_number = models.CharField(_(u"電話號碼"), max_length=30, default="", null=True, blank=True)
-	photo = models.ImageField(upload_to='photos', max_length=255, null=True, blank=True)
-	signature = models.CharField(_(u"個人簽名"), max_length=50, default="", null=True, blank=True)
-	gender = models.IntegerField(_(u"性別"), choices=GENDER_CHOICES, default=0, null=True, blank=True, help_text='0:other, 1: male, 2: female')
-
-	ip_address = models.IPAddressField(_(u"IP Address"), null=True, blank=True)
+	email = models.CharField(_(u"email"), max_length=100, null=True, blank=True)
 

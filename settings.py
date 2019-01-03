@@ -19,12 +19,11 @@ SITE_TAGLINE = ""
 
 # Controls the ordering and grouping of the admin menu.
 #
-# ADMIN_MENU_ORDER = (
-#     ("Content", ("pages.Page", "blog.BlogPost",
-#        "generic.ThreadedComment", ("Media Library", "fb_browse"),)),
-#     ("Site", ("sites.Site", "redirects.Redirect", "conf.Setting")),
-#     ("Users", ("auth.User", "auth.Group",)),
-# )
+ADMIN_MENU_ORDER = (
+   ("Site", ("sites.Site", "redirects.Redirect", "conf.Setting")),
+   (_(u"使用者設定"), ("account.User")),
+   (_(u"首頁設定"), ("home.IndexBanner", "home.IndexFashion", "home.IndexNews", "home.IndexRecommend", "home.IndexSale", "home.IndexHot", "home.IndexMap", )),
+)
 
 # A three item sequence, each containing a sequence of template tags
 # used to render the admin dashboard.
@@ -218,7 +217,7 @@ TEMPLATE_DIRS = (os.path.join(PROJECT_ROOT, "templates"),)
 
 INSTALLED_APPS = (
     "account",
-
+    "home",
     "rest_framework",
     "rest_framework_swagger",
 
