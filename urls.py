@@ -15,8 +15,9 @@ urlpatterns = patterns("",
 
     url(r'^docs/', include('rest_framework_swagger.urls')),
     url(r"^api-auth/", include("rest_framework.urls", namespace="rest_framework")),
-
+    
     url("^$", "home.views.home", name="home"),
+    url(r"^home/", include("home.urls")),
 )
 
 if (settings.DEBUG):

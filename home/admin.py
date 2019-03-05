@@ -4,7 +4,7 @@ from django import forms
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin as DjangoUserAdmin, UserChangeForm as DjangoUserChangeForm
 from django.contrib.auth.forms import UserCreationForm as DjangoUserCreationForm
-from home.models import IndexBanner, IndexFashion, IndexNews, IndexRecommend, IndexSale, IndexHot, IndexMap
+from home.models import IndexBanner, IndexFashion, IndexNews, IndexRecommend, IndexSale, IndexHot, IndexMap, DesignerDemo
 
 class IndexBannerAdmin(admin.ModelAdmin):
 	list_display = ['name', 'image_tag']
@@ -19,6 +19,9 @@ class IndexNewsAdmin(admin.ModelAdmin):
 class IndexRecommendAdmin(admin.ModelAdmin):
     list_display = ["title", "image_tag"]
 
+class DesignerDemoAdmin(admin.ModelAdmin):
+    list_display = ["image_tag"]
+
 class IndexSaleAdmin(admin.ModelAdmin):
     list_display = ["title", "image_tag"]
 
@@ -31,7 +34,9 @@ class IndexMapAdmin(admin.ModelAdmin):
 #admin.site.register(S3Data, S3DataAdmin)
 admin.site.register(IndexBanner, IndexBannerAdmin)
 admin.site.register(IndexFashion, IndexFashionAdmin)
+admin.site.register(DesignerDemo, DesignerDemoAdmin)
 admin.site.register(IndexNews, IndexNewsAdmin)
 admin.site.register(IndexRecommend, IndexRecommendAdmin)
+admin.site.register(IndexHot, IndexHotAdmin)
 admin.site.register(IndexSale, IndexSaleAdmin)
 admin.site.register(IndexMap, IndexMapAdmin)

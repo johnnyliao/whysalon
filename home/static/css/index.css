@@ -1,0 +1,2456 @@
+@charset "UTF-8";
+/* line 4, ../../sass/module/_page-title_module.scss */
+.page-title {
+  font-size: 128%;
+  position: relative;
+  text-align: center;
+  height: 80px;
+  color: #000;
+}
+/* line 11, ../../sass/module/_page-title_module.scss */
+.page-title h1 {
+  position: absolute;
+  z-index: 99;
+  bottom: 5px;
+  width: 100%;
+  letter-spacing: 1px;
+}
+/* line 19, ../../sass/module/_page-title_module.scss */
+.page-title h2 {
+  font-size: 280%;
+  position: absolute;
+  color: #eee;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  font-weight: 100;
+}
+
+/* line 30, ../../sass/module/_page-title_module.scss */
+.page-index-title {
+  font-size: 128%;
+  position: relative;
+  text-align: left;
+  height: 80px;
+  color: #000;
+  border-bottom: 1px solid #eee;
+}
+/* line 38, ../../sass/module/_page-title_module.scss */
+.page-index-title h1 {
+  position: absolute;
+  z-index: 99;
+  bottom: 5px;
+  letter-spacing: 1px;
+}
+/* line 45, ../../sass/module/_page-title_module.scss */
+.page-index-title h2 {
+  font-size: 280%;
+  position: absolute;
+  color: #eee;
+  bottom: -2px;
+  left: 0;
+  font-weight: 100;
+}
+/* line 55, ../../sass/module/_page-title_module.scss */
+.page-index-title .more {
+  position: absolute;
+  right: 0;
+  font-size: 77%;
+  letter-spacing: 0;
+  bottom: 0;
+}
+
+@media screen and (max-width: 1169px) {
+  /* line 66, ../../sass/module/_page-title_module.scss */
+  .page-title {
+    font-size: 118%;
+    height: 50px;
+  }
+  /* line 70, ../../sass/module/_page-title_module.scss */
+  .page-title h2 {
+    font-size: 200%;
+    bottom: -2px;
+  }
+
+  /* line 76, ../../sass/module/_page-title_module.scss */
+  .page-index-title {
+    margin-top: 30px;
+    font-size: 118%;
+    height: 50px;
+  }
+  /* line 81, ../../sass/module/_page-title_module.scss */
+  .page-index-title h2 {
+    font-size: 200%;
+    bottom: -2px;
+  }
+}
+/*Moudle_Nav---------------------*/
+/* line 9, ../../sass/module/_nav_index_module.scss */
+.header-warp {
+  margin-top: 17px;
+}
+
+/* line 13, ../../sass/module/_nav_index_module.scss */
+.header-top-warp {
+  width: 1170px;
+  margin: 20px auto 20px auto;
+  position: relative;
+  height: 41px;
+}
+
+/* line 20, ../../sass/module/_nav_index_module.scss */
+.header-sub-warp {
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+/* line 23, ../../sass/module/_nav_index_module.scss */
+.header-sub-warp img {
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 30, ../../sass/module/_nav_index_module.scss */
+  .hidden-md {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 36, ../../sass/module/_nav_index_module.scss */
+  .hidden-xs {
+    display: none !important;
+  }
+}
+/* line 41, ../../sass/module/_nav_index_module.scss */
+.header-logo {
+  text-align: center;
+  width: 200px;
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+}
+/* line 45, ../../sass/module/_nav_index_module.scss */
+.header-logo a {
+  background: url(/static/img/logo.png) center center no-repeat;
+  background-size: contain;
+  width: 200px;
+  height: 41px;
+  display: block;
+}
+
+/* line 58, ../../sass/module/_nav_index_module.scss */
+.header-top-login a {
+  text-align: right;
+  letter-spacing: 1px;
+  font-weight: 500;
+  line-height: 150%;
+}
+/* line 63, ../../sass/module/_nav_index_module.scss */
+.header-top-login a i {
+  display: none;
+}
+
+/* line 68, ../../sass/module/_nav_index_module.scss */
+.header-top-member {
+  padding-top: 13px;
+}
+
+/* line 72, ../../sass/module/_nav_index_module.scss */
+.header-top-search a {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  font-size: 100%;
+  line-height: 24px;
+  text-align: center;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin-top: 8px;
+  color: #000;
+  margin-right: 65px;
+  margin-left: 15px;
+}
+.header-bigone li{
+  width: 100vw;
+  float: left;
+  display: block;
+}
+/* line 88, ../../sass/module/_nav_index_module.scss */
+.header-bigone img {
+  width: 100%;
+}
+
+/* line 93, ../../sass/module/_nav_index_module.scss */
+#header {
+  position: relative;
+  -moz-box-shadow: #000 -1px 1px 5px;
+  -webkit-box-shadow: #000 -1px 1px 5px;
+  box-shadow: #000 -1px 1px 5px;
+}
+
+/* line 98, ../../sass/module/_nav_index_module.scss */
+.mainmenu {
+  width: 1170px;
+  margin: 0 auto;
+}
+/* line 101, ../../sass/module/_nav_index_module.scss */
+.mainmenu .mainmenu-menu {
+  width: 100%;
+  font-size: 87.5%;
+  color: #fff;
+  background: #000;
+  -moz-box-shadow: rgba(153, 153, 153, 0.2) 0px 3px 3px;
+  -webkit-box-shadow: rgba(153, 153, 153, 0.2) 0px 3px 3px;
+  box-shadow: rgba(153, 153, 153, 0.2) 0px 3px 3px;
+  text-align: center;
+}
+/* line 109, ../../sass/module/_nav_index_module.scss */
+.mainmenu .mainmenu-menu > li {
+  display: inline-block;
+  width: calc(97% / 7);
+  text-align: center;
+  position: relative;
+  word-break: break-all;
+  line-height: 150%;
+  margin: 0 0;
+  height: 60px;
+}
+/* line 118, ../../sass/module/_nav_index_module.scss */
+.mainmenu .mainmenu-menu > li span {
+  display: block;
+}
+/* line 121, ../../sass/module/_nav_index_module.scss */
+.mainmenu .mainmenu-menu > li a {
+  display: block;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 7px;
+}
+/* line 130, ../../sass/module/_nav_index_module.scss */
+.mainmenu .mainmenu-menu > li:hover div::before {
+  content: '';
+  transform: skew(-20deg);
+  background: #fff;
+  width: 100%;
+  margin: 0 auto;
+  height: 90px;
+  position: absolute;
+  top: -22px;
+  z-index: 999;
+  left: 0;
+  -moz-box-shadow: rgba(153, 153, 153, 0.2) 0px 5px 5px;
+  -webkit-box-shadow: rgba(153, 153, 153, 0.2) 0px 5px 5px;
+  box-shadow: rgba(153, 153, 153, 0.2) 0px 5px 5px;
+}
+/* line 143, ../../sass/module/_nav_index_module.scss */
+.mainmenu .mainmenu-menu > li:hover a {
+  color: #000;
+  z-index: 999;
+}
+
+/* line 150, ../../sass/module/_nav_index_module.scss */
+.mainmenu-menu-nav-recome {
+  top: -2px;
+}
+/* line 152, ../../sass/module/_nav_index_module.scss */
+.mainmenu-menu-nav-recome a {
+  padding: 10px 0;
+  display: block;
+}
+/* line 155, ../../sass/module/_nav_index_module.scss */
+.mainmenu-menu-nav-recome a img {
+  width: 72px;
+  height: 24px;
+}
+
+/* line 162, ../../sass/module/_nav_index_module.scss */
+.menu-recome-icon {
+  position: relative;
+}
+/* line 164, ../../sass/module/_nav_index_module.scss */
+.menu-recome-icon img {
+  display: block;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  margin-left: -35px;
+}
+
+/*Moudle_Nav---------------------*/
+/* line 2, ../../sass/module/_index_module.scss */
+.index-block {
+  width: 1170px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 8, ../../sass/module/_index_module.scss */
+.index-half-block {
+  width: 50%;
+  float: left;
+}
+
+/* line 13, ../../sass/module/_index_module.scss */
+.index-adbanner {
+  margin: 100px auto;
+  text-align: center;
+}
+
+/* line 18, ../../sass/module/_index_module.scss */
+.index-other-brand {
+  color: #000;
+  text-align: center;
+  line-height: 140%;
+  margin: 100px auto;
+}
+/* line 23, ../../sass/module/_index_module.scss */
+.index-other-brand li {
+  display: inline-block;
+  margin: 0 30px;
+}
+/* line 26, ../../sass/module/_index_module.scss */
+.index-other-brand li img {
+  width: 130px;
+  height: 40px;
+}
+/* line 31, ../../sass/module/_index_module.scss */
+.index-other-brand h2 {
+  font-weight: 500;
+  font-size: 125%;
+}
+/* line 35, ../../sass/module/_index_module.scss */
+.index-other-brand h3 {
+  font-weight: 500;
+}
+/* line 38, ../../sass/module/_index_module.scss */
+.index-other-brand hr {
+  width: 77%;
+  margin: 10px auto;
+}
+
+/* line 6, ../../sass/module/_hairstylist_module.scss */
+.hairstylist-index {
+  position: relative;
+  padding-right: 1%;
+  box-sizing: border-box;
+  min-height: 524px;
+}
+/* line 13, ../../sass/module/_hairstylist_module.scss */
+.hairstylist-index .page-index-title h1, .hairstylist-index .page-index-title h2 {
+  left: 28%;
+}
+/* line 18, ../../sass/module/_hairstylist_module.scss */
+.hairstylist-index .hairstylist-index-nav::before {
+  content: '';
+  width: 750px;
+  height: 37px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  transform: skew(10deg);
+  background: #181d34;
+  display: block;
+  position: absolute;
+  top: 1px;
+}
+/* line 30, ../../sass/module/_hairstylist_module.scss */
+.hairstylist-index .hairstylist-index-nav {
+  width: 750px;
+  color: #fff;
+  margin: 35px 0 0 29%;
+  padding: 3px 2%;
+  position: relative;
+  height: 37px;
+}
+/* line 38, ../../sass/module/_hairstylist_module.scss */
+.hairstylist-index .hairstylist-index-nav li {
+  width: calc(88% / 7);
+  font-size: 65%;
+  font-weight: 300;
+  line-height: 120%;
+  text-align: center;
+  padding: 4px;
+  height: 37px;
+  display: inline-block;
+  position: relative;
+}
+/* line 52, ../../sass/module/_hairstylist_module.scss */
+.hairstylist-index .hairstylist-index-nav li a {
+  position: absolute;
+  z-index: 999;
+  left: 0;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+/* line 62, ../../sass/module/_hairstylist_module.scss */
+.hairstylist-index .hairstylist-index-nav li:hover, .hairstylist-index .hairstylist-index-nav li.active {
+  color: #000;
+}
+/* line 65, ../../sass/module/_hairstylist_module.scss */
+.hairstylist-index .hairstylist-index-nav li:hover div, .hairstylist-index .hairstylist-index-nav li.active div {
+  position: relative;
+}
+/* line 69, ../../sass/module/_hairstylist_module.scss */
+.hairstylist-index .hairstylist-index-nav li:hover div::before, .hairstylist-index .hairstylist-index-nav li.active div::before {
+  content: '';
+  background: #fff;
+  position: absolute;
+  top: -12px;
+  left: 0px;
+  z-index: 999;
+  height: 50px;
+  width: 100%;
+  transform: skew(10deg);
+  -moz-box-shadow: rgba(153, 153, 153, 0.7) 0px 0px 6px;
+  -webkit-box-shadow: rgba(153, 153, 153, 0.7) 0px 0px 6px;
+  box-shadow: rgba(153, 153, 153, 0.7) 0px 0px 6px;
+}
+/* line 84, ../../sass/module/_hairstylist_module.scss */
+.hairstylist-index .hairstylist-index-block {
+  width: 865px;
+  margin: 20px 0 0 27%;
+}
+/* line 88, ../../sass/module/_hairstylist_module.scss */
+.hairstylist-index .hairstylist-index-block li {
+  display: block;
+  float: left;
+  height: 173px;
+  width: 173px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+}
+/* line 99, ../../sass/module/_hairstylist_module.scss */
+.hairstylist-index .hairstylist-index-block li a {
+  display: block;
+}
+/* line 103, ../../sass/module/_hairstylist_module.scss */
+.hairstylist-index .hairstylist-index-block li img {
+  width: 173px;
+  height: 173px;
+  object-fit: cover;
+  object-position: center center;
+  font-family: 'object-fit: cover; object-position: center center;';
+}
+/* line 111, ../../sass/module/_hairstylist_module.scss */
+.hairstylist-index .hairstylist-index-block li span {
+  display: block;
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
+  position: absolute;
+  bottom: -80px;
+  box-sizing: border-box;
+  padding: 10px;
+  font-weight: 500;
+  width: 100%;
+}
+/* line 125, ../../sass/module/_hairstylist_module.scss */
+.hairstylist-index .hairstylist-index-block li:hover span {
+  bottom: 0;
+}
+
+/* line 132, ../../sass/module/_hairstylist_module.scss */
+.hairstylist-index::before {
+  content: url(../img/hairstylist-index-show.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+/*首頁網友分享區塊*/
+/* line 143, ../../sass/module/_hairstylist_module.scss */
+.hairsnap-index .hairsnap-index-block {
+  margin-top: 15px;
+  width: 100%;
+}
+/* line 147, ../../sass/module/_hairstylist_module.scss */
+.hairsnap-index .hairsnap-index-block li {
+    float: left;
+    width: 183px;
+    height: 158px;
+    padding: 6px;
+}
+/* line 153, ../../sass/module/_hairstylist_module.scss */
+.hairsnap-index .hairsnap-index-block li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  font-family: 'object-fit: cover; object-position: center center;';
+}
+
+/* line 5, ../../sass/module/_stylist_module.scss */
+.stylist-index {
+  position: relative;
+}
+/* line 8, ../../sass/module/_stylist_module.scss */
+.stylist-index .page-index-title h1,
+.stylist-index .page-index-title h2 {
+  left: 50%;
+}
+/* line 12, ../../sass/module/_stylist_module.scss */
+.stylist-index .page-index-title h1 {
+  margin-left: -50px;
+}
+/* line 15, ../../sass/module/_stylist_module.scss */
+.stylist-index .page-index-title h2 {
+  margin-left: -76px;
+}
+
+/* line 21, ../../sass/module/_stylist_module.scss */
+.stylist-index-block-warp {
+  width: 1065px;
+  margin: 50px auto;
+  min-height: 455px;
+  position: relative;
+}
+
+/* line 28, ../../sass/module/_stylist_module.scss */
+.stylist-index-block {
+  position: relative;
+  height: 491px;
+}
+/* line 32, ../../sass/module/_stylist_module.scss */
+.stylist-index-block li {
+  display: block;
+  float: left;
+  width: 213px;
+}
+/* line 37, ../../sass/module/_stylist_module.scss */
+.stylist-index-block .stylist-index-block-img {
+  height: 410px;
+  position: relative;
+  width: 213px;
+}
+/* line 41, ../../sass/module/_stylist_module.scss */
+.stylist-index-block .stylist-index-block-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  font-family: 'object-fit: cover; object-position: center center;';
+}
+/* line 48, ../../sass/module/_stylist_module.scss */
+.stylist-index-block .stylist-index-block-img span {
+  display: block;
+  width: 90%;
+  height: 30px;
+  line-height: 30px;
+  font-size: 120%;
+  color: white;
+  background: black;
+  position: absolute;
+  bottom: 15px;
+  left: 5%;
+  text-align: center;
+}
+/* line 62, ../../sass/module/_stylist_module.scss */
+.stylist-index-block .stylist-index-block-info {
+  color: #000;
+  font-weight: 500;
+  padding: 10px;
+  margin-top: 5px;
+  position: relative;
+}
+/* line 69, ../../sass/module/_stylist_module.scss */
+.stylist-index-block .stylist-info-name {
+  border-bottom: 1px solid #000;
+  padding-bottom: 4px;
+}
+/* line 73, ../../sass/module/_stylist_module.scss */
+.stylist-index-block .stylist-info-store {
+  padding-top: 6px;
+}
+/* line 76, ../../sass/module/_stylist_module.scss */
+.stylist-index-block .stylist-info-fav {
+  position: absolute;
+  right: 13px;
+  top: 3px;
+  font-size: 150%;
+}
+
+/* line 85, ../../sass/module/_stylist_module.scss */
+.stylist-banner img {
+  width: 100%;
+}
+
+/* line 90, ../../sass/module/_stylist_module.scss */
+.stylist-index-block-navigation {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+/* line 91, ../../sass/module/_stylist_module.scss */
+.stylist-index-block-navigation a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  color: black;
+  font-size: 200%;
+  text-align: center;
+  position: absolute;
+  z-index: 99;
+}
+
+/* line 107, ../../sass/module/_stylist_module.scss */
+.stylist-index-block-flex-prev {
+  left: -70px;
+}
+
+/* line 111, ../../sass/module/_stylist_module.scss */
+.stylist-index-block-flex-next {
+  right: -70px;
+}
+
+/* line 115, ../../sass/module/_stylist_module.scss */
+.stylist-index::before {
+  content: '';
+  background-color: #f3f3f3;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  height: 380px;
+  width: 100%;
+}
+
+/* line 125, ../../sass/module/_stylist_module.scss */
+.stylist-style-list {
+  padding: 0 30px;
+  width: 1140px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+/* line 131, ../../sass/module/_stylist_module.scss */
+.stylist-style-list li {
+  width: 260px;
+  padding: 15px;
+  box-sizing: border-box;
+  color: #000;
+  font-weight: 500;
+  float: left;
+  margin: 5px;
+}
+/* line 139, ../../sass/module/_stylist_module.scss */
+.stylist-style-list li img {
+  width: 100%;
+}
+/* line 143, ../../sass/module/_stylist_module.scss */
+.stylist-style-list li:hover {
+  -moz-box-shadow: rgba(153, 153, 153, 0.6) 0px 0px 2px;
+  -webkit-box-shadow: rgba(153, 153, 153, 0.6) 0px 0px 2px;
+  box-shadow: rgba(153, 153, 153, 0.6) 0px 0px 2px;
+}
+/* line 146, ../../sass/module/_stylist_module.scss */
+.stylist-style-list .stylist-style-info {
+  margin-top: 10px;
+}
+/* line 148, ../../sass/module/_stylist_module.scss */
+.stylist-style-list .stylist-style-info p {
+  text-align: left;
+  line-height: 150%;
+}
+
+/*設計師單文頁*/
+/* line 158, ../../sass/module/_stylist_module.scss */
+.stylist-info {
+  position: relative;
+  margin-top: 130px;
+  width: 895px;
+  margin: 50px auto 80px auto;
+}
+
+/* line 168, ../../sass/module/_stylist_module.scss */
+.stylist-info-content header {
+  background: #f3f3f3;
+  color: #000;
+  width: 520px;
+  height: 140px;
+}
+/* line 174, ../../sass/module/_stylist_module.scss */
+.stylist-info-content h1 {
+  font-size: 131%;
+  font-weight: 500;
+  color: #000;
+  text-align: center;
+  margin: 30px auto;
+  display: inline-block;
+}
+/* line 182, ../../sass/module/_stylist_module.scss */
+.stylist-info-content table {
+  margin: 10px;
+  width: 500px;
+}
+/* line 186, ../../sass/module/_stylist_module.scss */
+.stylist-info-content th,
+.stylist-info-content td {
+  padding: 5px;
+  vertical-align: top;
+  line-height: 180%;
+  font-weight: 500;
+  font-size: 113%;
+  color: #000;
+}
+/* line 194, ../../sass/module/_stylist_module.scss */
+.stylist-info-content th img,
+.stylist-info-content td img {
+  width: 105px;
+  height: 105px;
+}
+
+/* line 201, ../../sass/module/_stylist_module.scss */
+.stylist-info-img {
+  -moz-box-shadow: rgba(153, 153, 153, 0.6) 0px 0px 2px;
+  -webkit-box-shadow: rgba(153, 153, 153, 0.6) 0px 0px 2px;
+  box-shadow: rgba(153, 153, 153, 0.6) 0px 0px 2px;
+  width: 375px;
+  padding: 15px;
+  height: 475px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #fff;
+}
+/* line 209, ../../sass/module/_stylist_module.scss */
+.stylist-info-img img {
+  width: 100%;
+  height: 445px;
+  object-fit: cover;
+  object-position: top;
+  font-family: 'object-fit: cover; object-position: top;';
+}
+
+/* line 218, ../../sass/module/_stylist_module.scss */
+.stylist-info-social {
+  height: 30px;
+  margin: 0;
+}
+/* line 221, ../../sass/module/_stylist_module.scss */
+.stylist-info-social a {
+  margin: 0 6px;
+}
+
+/* line 226, ../../sass/module/_stylist_module.scss */
+.stylist-info-demo {
+  width: 895px;
+  margin: 0 auto 80px auto;
+}
+
+/* line 231, ../../sass/module/_stylist_module.scss */
+.stylist-info-detail {
+  width: 1170px;
+  background: #f3f3f3;
+  padding: 50px 0;
+  margin: 0 auto 80px auto;
+}
+/* line 236, ../../sass/module/_stylist_module.scss */
+.stylist-info-detail .stylist-info-detail-title,
+.stylist-info-detail .html-content {
+  width: 890px;
+  margin: 0 auto;
+}
+/* line 241, ../../sass/module/_stylist_module.scss */
+.stylist-info-detail .html-content {
+  font-size: 100%;
+}
+
+/* line 246, ../../sass/module/_stylist_module.scss */
+.stylist-info-detail-title {
+  font-size: 131%;
+  font-weight: 500;
+  color: #000;
+  text-align: left;
+  margin-bottom: 10px;
+  position: relative;
+  border-bottom: 1px solid #f3f3f3;
+  padding-bottom: 5px;
+}
+
+/* line 258, ../../sass/module/_stylist_module.scss */
+.stylist-info-detail-demo li {
+  width: 220px;
+  height: 220px;
+  float: left;
+  margin-right: 5px;
+  overflow: hidden;
+}
+/* line 264, ../../sass/module/_stylist_module.scss */
+.stylist-info-detail-demo li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  font-family: 'object-fit: cover; object-position: center center;';
+}
+/* line 272, ../../sass/module/_stylist_module.scss */
+.stylist-info-detail-demo li:last-child {
+  margin-right: 0;
+}
+/* line 275, ../../sass/module/_stylist_module.scss */
+.stylist-info-detail-demo .stylist-info-detail-demo-img {
+  height: 100%;
+}
+
+/* line 280, ../../sass/module/_stylist_module.scss */
+.stylist-info-detail-title-more {
+  font-size: 76%;
+  position: absolute;
+  right: 0;
+  font-weight: 300;
+}
+
+/*設計師單文頁social plugin*/
+/* line 290, ../../sass/module/_stylist_module.scss */
+.stylist-social-block {
+  border-top: 1px solid #f3f3f3;
+  width: 1170px;
+  margin: 0 auto;
+  color: #000;
+  padding: 50px 0;
+}
+/* line 296, ../../sass/module/_stylist_module.scss */
+.stylist-social-block h3 {
+  font-size: 150%;
+  font-weight: 600;
+  text-align: center;
+  margin: 25px 0;
+}
+
+/* line 304, ../../sass/module/_stylist_module.scss */
+.stylist-social-block-fb {
+  width: 40%;
+}
+/* line 306, ../../sass/module/_stylist_module.scss */
+.stylist-social-block-fb iframe {
+  padding: 6px;
+}
+
+/* line 311, ../../sass/module/_stylist_module.scss */
+.stylist-social-block-ig {
+  width: 55%;
+  text-align: center;
+}
+
+/* line 6, ../../sass/module/_blog_module.scss */
+.blog-index {
+  position: relative;
+  padding-right: 1%;
+  box-sizing: border-box;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+/* line 14, ../../sass/module/_blog_module.scss */
+.blog-index::before {
+  content: '';
+  background-color: #f3f3f3;
+  position: absolute;
+  top: 65%;
+  left: 0;
+  height: 250px;
+  width: 100%;
+}
+
+/* line 24, ../../sass/module/_blog_module.scss */
+.blog-index-block {
+  position: relative;
+  top: 30px;
+  left: 8px;
+  text-align: center;
+  width: 100%;
+}
+/* line 31, ../../sass/module/_blog_module.scss */
+.blog-index-block li {
+  display: inline-block;
+  width: 270px;
+  height: 350px;
+  margin: 5px;
+  text-align: left;
+  color: #000;
+  background: #fff;
+  line-height: 150%;
+  padding-bottom: 18px;
+}
+/* line 42, ../../sass/module/_blog_module.scss */
+.blog-index-block li .blog-index-img-warp {
+  height: 270px;
+  overflow: hidden;
+}
+/* line 47, ../../sass/module/_blog_module.scss */
+.blog-index-block li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  font-family: 'object-fit: cover; object-position: center center;';
+}
+/* line 56, ../../sass/module/_blog_module.scss */
+.blog-index-block li:hover {
+  -moz-box-shadow: rgba(153, 153, 153, 0.7) 0px 0px 16px;
+  -webkit-box-shadow: rgba(153, 153, 153, 0.7) 0px 0px 16px;
+  box-shadow: rgba(153, 153, 153, 0.7) 0px 0px 16px;
+}
+/* line 60, ../../sass/module/_blog_module.scss */
+.blog-index-block h3 {
+  font-size: 114%;
+  letter-spacing: 2px;
+  padding: 5px 0 0 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 90%;
+  text-overflow: ellipsis;
+}
+/* line 70, ../../sass/module/_blog_module.scss */
+.blog-index-block h4 {
+  font-size: 90%;
+  letter-spacing: 1px;
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 79, ../../sass/module/_blog_module.scss */
+.blog-index-block .date {
+  font-size: 90%;
+  letter-spacing: 1px;
+  color: #b2b2b2;
+  padding-left: 20px;
+}
+
+/* line 5, ../../sass/module/_news_module.scss */
+.news-index .page-index-title {
+  width: 95%;
+}
+
+/* line 10, ../../sass/module/_news_module.scss */
+.news-list {
+  font-size: 120%;
+  letter-spacing: 2px;
+  margin: 30px 0;
+}
+/* line 14, ../../sass/module/_news_module.scss */
+.news-list li {
+  width: 100%;
+  display: block;
+  height: 55px;
+  color: #000;
+  line-height: 55px;
+}
+/* line 21, ../../sass/module/_news_module.scss */
+.news-list li:hover .news-list-title {
+  text-decoration: underline;
+}
+/* line 24, ../../sass/module/_news_module.scss */
+.news-list .news-list-title {
+  display: inline-block;
+  width: 74%;
+  height: 55px;
+  overflow: hidden;
+}
+/* line 30, ../../sass/module/_news_module.scss */
+.news-list .news-list-date {
+  display: inline-block;
+  width: 20%;
+  height: 55px;
+  overflow: hidden;
+}
+
+/* line 38, ../../sass/module/_news_module.scss */
+.news-nav {
+  text-align: center;
+  margin: 50px auto;
+  width: 1170px;
+  color: #000;
+}
+/* line 43, ../../sass/module/_news_module.scss */
+.news-nav div {
+  display: inline-block;
+  height: 50px;
+  border: solid 2px #181d34;
+  width: 300px;
+  position: relative;
+  line-height: 120%;
+  padding-top: 6px;
+  box-sizing: border-box;
+  font-weight: 500;
+}
+/* line 54, ../../sass/module/_news_module.scss */
+.news-nav div::before {
+  content: '';
+  height: 50px;
+  border: solid 2px #181d34;
+  width: 50px;
+  position: absolute;
+  transform: skew(-40deg);
+  box-sizing: border-box;
+  top: -2px;
+}
+/* line 64, ../../sass/module/_news_module.scss */
+.news-nav div:first-child {
+  border-right: 0;
+}
+/* line 67, ../../sass/module/_news_module.scss */
+.news-nav div:first-child::before {
+  border-left: 0;
+  right: -25px;
+}
+/* line 71, ../../sass/module/_news_module.scss */
+.news-nav div:last-child {
+  border-left: 0;
+  margin-left: 53px;
+}
+/* line 75, ../../sass/module/_news_module.scss */
+.news-nav div:last-child::before {
+  border-right: 0;
+  left: -25px;
+}
+/* line 79, ../../sass/module/_news_module.scss */
+.news-nav div.active {
+  background: #181d34;
+  color: #fff;
+}
+/* line 83, ../../sass/module/_news_module.scss */
+.news-nav div.active::before {
+  background: #181d34;
+}
+/* line 86, ../../sass/module/_news_module.scss */
+.news-nav .news-nav-sub {
+  font-size: 70%;
+}
+
+/* line 91, ../../sass/module/_news_module.scss */
+.newsdetail {
+  background: #fff;
+  width: 1086px;
+  padding: 20px;
+  margin: 20px auto;
+  position: relative;
+}
+
+/* line 99, ../../sass/module/_news_module.scss */
+.newstitle-block {
+  position: relative;
+  border-bottom: 1px solid #000;
+  margin-bottom: 10px;
+}
+/* line 104, ../../sass/module/_news_module.scss */
+.newstitle-block.news-singleblock .newsshare {
+  text-align: right;
+  display: block;
+  position: relative;
+}
+/* line 108, ../../sass/module/_news_module.scss */
+.newstitle-block.news-singleblock .newsshare .single-share-box .share-buttons {
+  position: absolute;
+  width: auto;
+  right: -40px;
+  z-index: 10;
+}
+/* line 116, ../../sass/module/_news_module.scss */
+.newstitle-block .page-title {
+  text-align: left;
+}
+/* line 118, ../../sass/module/_news_module.scss */
+.newstitle-block .page-title h1 {
+  padding-left: 10px;
+}
+/* line 122, ../../sass/module/_news_module.scss */
+.newstitle-block .newstitle {
+  display: inline-block;
+  border: solid 1px #181d34;
+  background: #181d34;
+  position: relative;
+  line-height: 150%;
+  box-sizing: border-box;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  padding: 10px;
+  width: 100%;
+}
+/* line 154, ../../sass/module/_news_module.scss */
+.newstitle-block h3 {
+  font-size: 110%;
+  color: #000;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+/* line 161, ../../sass/module/_news_module.scss */
+.newstitle-block .newsdate {
+  font-weight: 300;
+  color: #000;
+  margin-bottom: 7px;
+}
+/* line 166, ../../sass/module/_news_module.scss */
+.newstitle-block .newstitle-social {
+  text-align: right;
+  margin-bottom: 6px;
+}
+/* line 169, ../../sass/module/_news_module.scss */
+.newstitle-block .newstitle-social label.newstitle-social-fav {
+  display: inline-block;
+  border: 1px solid #000;
+  color: #000;
+  height: 22px;
+  vertical-align: top;
+  line-height: 16px;
+  font-size: 80%;
+  padding: 2px 10px;
+  box-sizing: border-box;
+  margin: 3px 5px;
+}
+
+/* line 184, ../../sass/module/_news_module.scss */
+.newscontent {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #000;
+  margin-bottom: 15px;
+}
+
+/* line 190, ../../sass/module/_news_module.scss */
+.newsdetail-relate-items {
+  color: #000;
+  font-size: 75%;
+  text-align: center;
+}
+/* line 194, ../../sass/module/_news_module.scss */
+.newsdetail-relate-items li {
+  display: inline-block;
+  width: calc(90% / 7);
+  text-align: center;
+  height: 180px;
+  vertical-align: bottom;
+  margin: 0 10px;
+}
+/* line 201, ../../sass/module/_news_module.scss */
+.newsdetail-relate-items li img {
+  width: 100%;
+  max-height: 140px;
+  object-fit: contain;
+}
+/* line 207, ../../sass/module/_news_module.scss */
+.newsdetail-relate-items span {
+  display: block;
+}
+
+/* line 213, ../../sass/module/_news_module.scss */
+.events-index .events-index-block {
+  font-size: 85%;
+  margin: 30px 0;
+  text-align: center;
+  line-height: 150%;
+}
+/* line 218, ../../sass/module/_news_module.scss */
+.events-index .events-index-block li {
+  width: 274px;
+  display: inline-block;
+  color: #000;
+  margin: 0 5px;
+  text-align: left;
+  margin-bottom: 30px;
+  margin: 0 5px;
+  text-align: left;
+}
+/* line 225, ../../sass/module/_news_module.scss */
+.events-index .events-index-block li .event-index-img-warp {
+  height: 115px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+/* line 230, ../../sass/module/_news_module.scss */
+.events-index .events-index-block li img {
+  width: 100%;
+}
+/* line 235, ../../sass/module/_news_module.scss */
+.events-index .events-index-block li h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 99%;
+  text-overflow: ellipsis;
+}
+/* line 242, ../../sass/module/_news_module.scss */
+.events-index .events-index-block p {
+  margin-top: 10px;
+}
+
+/* line 248, ../../sass/module/_news_module.scss */
+.events-list {
+  width: 960px;
+  margin: 100px auto;
+}
+/* line 251, ../../sass/module/_news_module.scss */
+.events-list li {
+  margin: 25px 0;
+  color: #000;
+}
+/* line 255, ../../sass/module/_news_module.scss */
+.events-list .events-list-img {
+  width: 534px;
+  display: inline-block;
+  margin-right: 15px;
+}
+/* line 259, ../../sass/module/_news_module.scss */
+.events-list .events-list-img img {
+  width: 100%;
+}
+/* line 263, ../../sass/module/_news_module.scss */
+.events-list .events-list-info {
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+}
+/* line 267, ../../sass/module/_news_module.scss */
+.events-list .events-list-info h3,
+.events-list .events-list-info h2 {
+  font-size: 112%;
+  letter-spacing: 3px;
+  line-height: 150%;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+/* line 275, ../../sass/module/_news_module.scss */
+.events-list .events-list-info hr {
+  border: 0;
+  border-bottom: 1px solid #000;
+  width: 50%;
+  margin: 15px 0;
+}
+/* line 281, ../../sass/module/_news_module.scss */
+.events-list .events-list-info p {
+  line-height: 150%;
+  letter-spacing: 2px;
+}
+
+/* line 3, ../../sass/module/_sales_module.scss */
+.salon-index {
+  margin-top: 100px;
+}
+/* line 6, ../../sass/module/_sales_module.scss */
+.salon-index .page-index-title h1,
+.salon-index .page-index-title h2 {
+  left: 50%;
+}
+/* line 10, ../../sass/module/_sales_module.scss */
+.salon-index .page-index-title h1 {
+  margin-left: -50px;
+}
+/* line 13, ../../sass/module/_sales_module.scss */
+.salon-index .page-index-title h2 {
+  margin-left: -76px;
+}
+
+/* line 19, ../../sass/module/_sales_module.scss */
+.salon-index-block {
+  margin-top: 20px;
+}
+/* line 21, ../../sass/module/_sales_module.scss */
+.salon-index-block li {
+  display: block;
+  float: left;
+  width: 292px;
+  height: 292px;
+  overflow: hidden;
+  position: relative;
+}
+/* line 28, ../../sass/module/_sales_module.scss */
+.salon-index-block li span {
+  display: block;
+  width: 74%;
+  height: 30px;
+  line-height: 30px;
+  font-size: 120%;
+  color: #fff;
+  background: black;
+  position: absolute;
+  bottom: 25px;
+  left: 13%;
+  text-align: center;
+}
+/* line 41, ../../sass/module/_sales_module.scss */
+.salon-index-block li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  font-family: 'object-fit: cover; object-position: center center;';
+}
+/* line 49, ../../sass/module/_sales_module.scss */
+.salon-index-block .stylist-index-block-info {
+  color: #000;
+  font-weight: 500;
+  padding: 10px;
+  margin-top: 5px;
+  position: relative;
+}
+/* line 56, ../../sass/module/_sales_module.scss */
+.salon-index-block .stylist-info-name {
+  border-bottom: 1px solid #000;
+  padding-bottom: 4px;
+}
+/* line 60, ../../sass/module/_sales_module.scss */
+.salon-index-block .stylist-info-store {
+  padding-top: 6px;
+}
+/* line 63, ../../sass/module/_sales_module.scss */
+.salon-index-block .stylist-info-fav {
+  position: absolute;
+  right: 13px;
+  top: 3px;
+  font-size: 150%;
+}
+
+/* line 71, ../../sass/module/_sales_module.scss */
+.salon-map {
+  margin-top: 20px;
+  text-align: center;
+}
+/* line 74, ../../sass/module/_sales_module.scss */
+.salon-map #map {
+  width: 1052px;
+  height: 527px;
+  margin: 0 auto;
+}
+
+/* line 81, ../../sass/module/_sales_module.scss */
+.salon-info {
+  color: #000;
+  padding: 30px 0;
+}
+/* line 84, ../../sass/module/_sales_module.scss */
+.salon-info .salon-info-left {
+  text-align: left;
+  line-height: 160%;
+}
+/* line 87, ../../sass/module/_sales_module.scss */
+.salon-info .salon-info-left h1 {
+  font-size: 131%;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+/* line 91, ../../sass/module/_sales_module.scss */
+.salon-info .salon-info-left h1 img {
+  vertical-align: bottom;
+}
+/* line 95, ../../sass/module/_sales_module.scss */
+.salon-info .salon-info-left h2 {
+  font-size: 87.5%;
+}
+/* line 99, ../../sass/module/_sales_module.scss */
+.salon-info .salon-info-right {
+  text-align: right;
+}
+/* line 102, ../../sass/module/_sales_module.scss */
+.salon-info .salon-info-order {
+  display: inline-block;
+  width: 190px;
+  height: 30px;
+  background: #181434;
+  line-height: 30px;
+  font-size: 87.5%;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+/* line 114, ../../sass/module/_sales_module.scss */
+.salon-info .salon-info-social {
+  margin-top: 15px;
+}
+/* line 116, ../../sass/module/_sales_module.scss */
+.salon-info .salon-info-social a {
+  margin-left: 8px;
+}
+
+/* line 122, ../../sass/module/_sales_module.scss */
+.salon-bigone {
+  margin: 0 auto 50px auto;
+  width: 1170px;
+  height: 450px;
+  overflow: hidden;
+}
+
+/* line 129, ../../sass/module/_sales_module.scss */
+.salon-bigone img {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 134, ../../sass/module/_sales_module.scss */
+.salon-content {
+  margin-top: 100px;
+  width: 70%;
+  -moz-box-shadow: rgba(153, 153, 153, 0.4) 0px 0px 3px;
+  -webkit-box-shadow: rgba(153, 153, 153, 0.4) 0px 0px 3px;
+  box-shadow: rgba(153, 153, 153, 0.4) 0px 0px 3px;
+  /*border:1px solid rgba(#999, 0.8);*/
+  padding: 10px 20px;
+  margin-bottom: 100px;
+}
+
+/* line 143, ../../sass/module/_sales_module.scss */
+.salon-content-event {
+  margin-top: 70px;
+  font-size: 85%;
+  width: 25%;
+}
+
+/* line 149, ../../sass/module/_sales_module.scss */
+.salon-price {
+  width: 100%;
+}
+/* line 151, ../../sass/module/_sales_module.scss */
+.salon-price .salon-price-title {
+  width: 150px;
+}
+/* line 154, ../../sass/module/_sales_module.scss */
+.salon-price thead td {
+  height: 55px;
+  background: #626262;
+  vertical-align: middle;
+  color: #fff;
+  font-weight: 500;
+  font-size: 150%;
+  text-align: center;
+  letter-spacing: 2px;
+}
+/* line 164, ../../sass/module/_sales_module.scss */
+.salon-price tbody td {
+  line-height: 200%;
+  background: #f3f3f3;
+  color: #000;
+  padding: 20px 0 0 10px;
+  font-size: 85%;
+}
+
+/* line 173, ../../sass/module/_sales_module.scss */
+.salon-data-map {
+  margin-top: 50px;
+  width: 50%;
+}
+/* line 176, ../../sass/module/_sales_module.scss */
+.salon-data-map #map {
+  width: 565px;
+  height: 272px;
+}
+
+/* line 182, ../../sass/module/_sales_module.scss */
+.salon-data-info {
+  width: 50%;
+  color: #000;
+  margin-top: 50px;
+  text-align: right;
+}
+/* line 187, ../../sass/module/_sales_module.scss */
+.salon-data-info table {
+  width: 70%;
+  display: inline-block;
+  text-align: left;
+  line-height: 180%;
+  font-size: 85%;
+}
+/* line 194, ../../sass/module/_sales_module.scss */
+.salon-data-info th {
+  width: 30%;
+  vertical-align: super;
+}
+/* line 198, ../../sass/module/_sales_module.scss */
+.salon-data-info td {
+  vertical-align: super;
+  line-height: 120%;
+  padding: 2px;
+  padding-bottom: 7px;
+}
+
+/* line 206, ../../sass/module/_sales_module.scss */
+.solon-adbanner {
+  margin: 30px 0;
+}
+
+/* line 12, ../../sass/index.scss */
+.bread {
+  display: none;
+}
+
+/* line 14, ../../sass/index.scss */
+.header-bigone {
+  height: 800px;
+}
+
+/* line 18, ../../sass/index.scss */
+.header-bigone::after {
+  content: 'loading...';
+  text-align: center;
+  color: #fff;
+  font-size: 120%;
+  display: block;
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  top: 250px;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1169px) {
+  /*Moudle_Nav---------------------*/
+  /* line 9, ../../sass/module/_nav_index_640_module.scss */
+  .header-top-warp {
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    z-index: 9999999;
+  }
+
+  /* line 17, ../../sass/module/_nav_index_640_module.scss */
+  .header-logo {
+    text-align: center;
+    width: 100%;
+    padding: 10px 50px;
+    left: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  /* line 21, ../../sass/module/_nav_index_640_module.scss */
+  .header-logo a {
+    background: url(../img/logo.png) center center no-repeat;
+    background-size: contain;
+    width: 40vw;
+    height: 30px;
+    display: inline-block;
+  }
+  /* line 31, ../../sass/module/_nav_index_640_module.scss */
+  .header-logo input {
+    width: 100%;
+    border-radius: 5px;
+    border-radius: 5px;
+    border-radius: 5px;
+    border: 0;
+    line-height: 150%;
+    text-align: center;
+  }
+
+  /* line 40, ../../sass/module/_nav_index_640_module.scss */
+  .header-top-search,
+  .header-top-login,
+  .header-top-member {
+    display: none;
+  }
+
+  /* line 47, ../../sass/module/_nav_index_640_module.scss */
+  .header-bigone img {
+    width: 100%;
+  }
+
+  /* line 52, ../../sass/module/_nav_index_640_module.scss */
+  #header {
+    position: relative;
+  }
+
+  /* line 56, ../../sass/module/_nav_index_640_module.scss */
+  .mainmenu {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 41px;
+    z-index: 9999;
+    background: black;
+    height: 100%;
+  }
+  /* line 64, ../../sass/module/_nav_index_640_module.scss */
+  .mainmenu .mainmenu-menu {
+    background: #000000;
+    width: 100%;
+    font-size: 100%;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 0;
+    height: auto;
+    border-bottom: none;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  /* line 77, ../../sass/module/_nav_index_640_module.scss */
+  .mainmenu .mainmenu-menu > li {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+    position: inherit;
+    border-bottom: 1px solid #fff;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    margin: 0;
+    margin-top: 10px;
+    height: auto;
+  }
+  /* line 89, ../../sass/module/_nav_index_640_module.scss */
+  .mainmenu .mainmenu-menu > li a {
+    color: #fff;
+    position: inherit;
+  }
+  /* line 93, ../../sass/module/_nav_index_640_module.scss */
+  .mainmenu .mainmenu-menu > li span {
+    display: block;
+    font-size: 75%;
+  }
+  /* line 98, ../../sass/module/_nav_index_640_module.scss */
+  .mainmenu .mainmenu-menu > li.mainmenu-menu-nav-recome {
+    padding-bottom: 2px;
+    padding-top: 0;
+  }
+  /* line 103, ../../sass/module/_nav_index_640_module.scss */
+  .mainmenu .mainmenu-menu > li:hover div::before {
+    content: none;
+  }
+  /* line 107, ../../sass/module/_nav_index_640_module.scss */
+  .mainmenu .mainmenu-contact {
+    display: none;
+  }
+
+  /* line 112, ../../sass/module/_nav_index_640_module.scss */
+  .menu-recome-icon {
+    position: relative;
+  }
+  /* line 114, ../../sass/module/_nav_index_640_module.scss */
+  .menu-recome-icon img {
+    display: block;
+    position: initial;
+    margin: 0 auto;
+  }
+
+  /*Moudle_Nav---------------------*/
+  /*Moudle_Index---------------------*/
+  /* line 3, ../../sass/module/_index_640_module.scss */
+  .index-block,
+  .index-half-block {
+    width: 100%;
+    margin-top: 0;
+    padding: 0 5vw;
+    box-sizing: border-box;
+  }
+
+  /* line 11, ../../sass/module/_index_640_module.scss */
+  .index-half-block {
+    padding: 0;
+  }
+
+  /* line 15, ../../sass/module/_index_640_module.scss */
+  .index-info {
+    display: none;
+  }
+
+  /* line 19, ../../sass/module/_index_640_module.scss */
+  .flexslider {
+    margin: 0;
+  }
+
+  /* line 23, ../../sass/module/_index_640_module.scss */
+  .index-other-brand {
+    margin-top: 30px;
+    padding-left: 5vw;
+    box-sizing: border-box;
+  }
+  /* line 27, ../../sass/module/_index_640_module.scss */
+  .index-other-brand li {
+    display: inline-block;
+    width: 40%;
+    margin: 3%;
+  }
+  /* line 31, ../../sass/module/_index_640_module.scss */
+  .index-other-brand li img {
+    width: 100%;
+  }
+
+  /* line 37, ../../sass/module/_index_640_module.scss */
+  .header-bigone {
+    height: auto;
+  }
+  /* line 39, ../../sass/module/_index_640_module.scss */
+  .header-bigone img {
+    width: 100%;
+    display: block;
+  }
+
+  /* line 5, ../../sass/module/_hairstylist_640_module.scss */
+  .hairstylist-index {
+    position: relative;
+    padding-right: 5vw;
+    box-sizing: border-box;
+    min-height: 0;
+    /*手機板下拉箭頭*/
+  }
+  /* line 11, ../../sass/module/_hairstylist_640_module.scss */
+  .hairstylist-index .page-index-title h1,
+  .hairstylist-index .page-index-title h2 {
+    left: 0%;
+  }
+  /* line 16, ../../sass/module/_hairstylist_640_module.scss */
+  .hairstylist-index .hairstylist-index-nav::before {
+    content: none;
+  }
+  /* line 19, ../../sass/module/_hairstylist_640_module.scss */
+  .hairstylist-index .hairstylist-index-nav {
+    width: 100%;
+    background: #181d34;
+    color: #fff;
+    transform: none;
+    margin: 0;
+    padding: 3px 0;
+    box-shadow: rgba(153, 153, 153, 0.6) 2px 2px 2px;
+    box-shadow: rgba(153, 153, 153, 0.6) 2px 2px 2px;
+    box-shadow: rgba(153, 153, 153, 0.6) 2px 2px 2px;
+    border-top: solid 5px rgba(57, 67, 116, 0.5);
+    height: auto;
+  }
+  /* line 29, ../../sass/module/_hairstylist_640_module.scss */
+  .hairstylist-index .hairstylist-index-nav li {
+    width: 100%;
+    font-size: 80%;
+    line-height: 120%;
+    padding: 4px;
+    height: 29px;
+    display: inline-block;
+    position: relative;
+  }
+  /* line 35, ../../sass/module/_hairstylist_640_module.scss */
+  .hairstylist-index .hairstylist-index-nav li div {
+    transform: none;
+  }
+  /* line 38, ../../sass/module/_hairstylist_640_module.scss */
+  .hairstylist-index .hairstylist-index-nav li a {
+    z-index: 99;
+  }
+  /* line 44, ../../sass/module/_hairstylist_640_module.scss */
+  .hairstylist-index .hairstylist-index-nav li:hover,
+  .hairstylist-index .hairstylist-index-nav li.active {
+    color: #fff;
+  }
+  /* line 47, ../../sass/module/_hairstylist_640_module.scss */
+  .hairstylist-index .hairstylist-index-nav li:hover div,
+  .hairstylist-index .hairstylist-index-nav li.active div {
+    position: relative;
+  }
+  /* line 50, ../../sass/module/_hairstylist_640_module.scss */
+  .hairstylist-index .hairstylist-index-nav li:hover div::before,
+  .hairstylist-index .hairstylist-index-nav li.active div::before {
+    content: none;
+  }
+  /* line 56, ../../sass/module/_hairstylist_640_module.scss */
+  .hairstylist-index .mobile-menu-main-active {
+    border-top: 0 !important;
+    margin-top: 35px;
+  }
+  /* line 60, ../../sass/module/_hairstylist_640_module.scss */
+  .hairstylist-index .mobile-menu-main-active li::after {
+    content: '\f0d7';
+    font-family: 'FontAwesome';
+    position: absolute;
+    right: 20px;
+    top: 13px;
+    font-size: 150%;
+  }
+  /* line 68, ../../sass/module/_hairstylist_640_module.scss */
+  .hairstylist-index .hairstylist-index-block {
+    width: 100%;
+    margin: 20px auto 0 auto;
+  }
+  /* line 71, ../../sass/module/_hairstylist_640_module.scss */
+  .hairstylist-index .hairstylist-index-block li {
+    height: 0;
+    width: 50%;
+    padding-bottom: 50%;
+  }
+  /* line 75, ../../sass/module/_hairstylist_640_module.scss */
+  .hairstylist-index .hairstylist-index-block li a {
+    display: block;
+  }
+  /* line 78, ../../sass/module/_hairstylist_640_module.scss */
+  .hairstylist-index .hairstylist-index-block li img {
+    width: 100%;
+    height: 100%;
+  }
+  /* line 82, ../../sass/module/_hairstylist_640_module.scss */
+  .hairstylist-index .hairstylist-index-block li span {
+    display: block;
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    padding: 10px;
+    font-weight: 500;
+    width: 100%;
+  }
+  /* line 95, ../../sass/module/_hairstylist_640_module.scss */
+  .hairstylist-index .hairstylist-index-block li:hover span {
+    bottom: 0;
+  }
+
+  /* line 102, ../../sass/module/_hairstylist_640_module.scss */
+  .hairstylist-index::before {
+    content: '';
+  }
+
+  /* line 107, ../../sass/module/_hairstylist_640_module.scss */
+  .hairsnap-index .page-index-title {
+    width: 100%;
+  }
+  /* line 110, ../../sass/module/_hairstylist_640_module.scss */
+  .hairsnap-index .hairsnap-index-block {
+    margin-top: 15px;
+    margin-left: auto;
+    width: 100%;
+  }
+  /* line 114, ../../sass/module/_hairstylist_640_module.scss */
+  .hairsnap-index .hairsnap-index-block li {
+    float: left;
+    width: 39vw;
+    height: 39vw;
+    padding: 3vw;
+  }
+
+  /* line 6, ../../sass/module/_blog_640_module.scss */
+  .blog-index {
+    position: relative;
+    padding-right: 5vw;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  /* line 13, ../../sass/module/_blog_640_module.scss */
+  .blog-index::before {
+    content: none;
+  }
+
+  /* line 17, ../../sass/module/_blog_640_module.scss */
+  .blog-index-block {
+    font-size: 80%;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+  }
+  /* line 23, ../../sass/module/_blog_640_module.scss */
+  .blog-index-block li {
+    margin-top: 20px;
+    width: 44vw;
+    height: 41vw;
+    padding: 0;
+    margin: 0;
+    color: #000;
+    box-shadow: rgba(153, 153, 153, 0.7) 0px 0px 3px;
+    box-shadow: rgba(153, 153, 153, 0.7) 0px 0px 3px;
+    box-shadow: rgba(153, 153, 153, 0.7) 0px 0px 3px;
+  }
+  /* line 31, ../../sass/module/_blog_640_module.scss */
+  .blog-index-block li .blog-index-img-warp {
+    height: 25vw;
+    overflow: hidden;
+  }
+  /* line 39, ../../sass/module/_blog_640_module.scss */
+  .blog-index-block h3 {
+    padding: 5px 0 0 5px;
+  }
+  /* line 43, ../../sass/module/_blog_640_module.scss */
+  .blog-index-block h4 {
+    padding-left: 5px;
+  }
+  /* line 47, ../../sass/module/_blog_640_module.scss */
+  .blog-index-block .date {
+    padding-left: 5px;
+  }
+
+  /*Moudle_News---------------------*/
+  /* line 7, ../../sass/module/_news_640_module.scss */
+  .news-index .page-index-title {
+    width: 100%;
+  }
+
+  /* line 13, ../../sass/module/_news_640_module.scss */
+  .news-list li {
+    height: auto;
+    line-height: 150%;
+    margin-bottom: 5px;
+  }
+  /* line 18, ../../sass/module/_news_640_module.scss */
+  .news-list li:hover .news-list-title {
+    text-decoration: underline;
+  }
+  /* line 21, ../../sass/module/_news_640_module.scss */
+  .news-list .news-list-title {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  /* line 26, ../../sass/module/_news_640_module.scss */
+  .news-list .news-list-date {
+    display: block;
+    width: 100%;
+    height: auto;
+    font-size: 90%;
+    color: #b2b2b2;
+  }
+
+  /* line 35, ../../sass/module/_news_640_module.scss */
+  .news-nav {
+    width: 100%;
+    margin: 25px auto;
+  }
+  /* line 38, ../../sass/module/_news_640_module.scss */
+  .news-nav div {
+    height: 46px;
+    width: 40%;
+  }
+  /* line 42, ../../sass/module/_news_640_module.scss */
+  .news-nav div::before {
+    height: 46px;
+  }
+
+  /* line 47, ../../sass/module/_news_640_module.scss */
+  .newsdetail {
+    width: 80%;
+    margin: 5vw auto;
+  }
+
+  /* line 52, ../../sass/module/_news_640_module.scss */
+  .newstitle-block {
+    position: relative;
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+  }
+  /* line 56, ../../sass/module/_news_640_module.scss */
+  .newstitle-block .page-title {
+    text-align: left;
+  }
+  /* line 58, ../../sass/module/_news_640_module.scss */
+  .newstitle-block .page-title h1 {
+    padding-left: 10px;
+  }
+  /* line 62, ../../sass/module/_news_640_module.scss */
+  .newstitle-block .newstitle {
+    margin-bottom: 10px;
+  }
+  /* line 65, ../../sass/module/_news_640_module.scss */
+  .newstitle-block h3 {
+    font-size: 110%;
+    color: #000;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  /* line 72, ../../sass/module/_news_640_module.scss */
+  .newstitle-block .newsdate {
+    font-weight: 300;
+    color: #000;
+    margin-bottom: 7px;
+  }
+
+  /* line 79, ../../sass/module/_news_640_module.scss */
+  .newscontent {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 15px;
+    overflow: hidden;
+  }
+
+  /* line 86, ../../sass/module/_news_640_module.scss */
+  .newsdetail-relate-items {
+    color: #000;
+    font-size: 75%;
+  }
+  /* line 89, ../../sass/module/_news_640_module.scss */
+  .newsdetail-relate-items li {
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin: 10px auto;
+  }
+  /* line 95, ../../sass/module/_news_640_module.scss */
+  .newsdetail-relate-items span {
+    display: block;
+  }
+
+  /* line 100, ../../sass/module/_news_640_module.scss */
+  .events-index {
+    padding-right: 5vw;
+    box-sizing: border-box;
+  }
+  /* line 103, ../../sass/module/_news_640_module.scss */
+  .events-index .events-index-block {
+    font-size: 85%;
+    margin: 20px 0;
+    text-align: center;
+    line-height: 150%;
+  }
+  /* line 108, ../../sass/module/_news_640_module.scss */
+  .events-index .events-index-block li {
+    width: 100%;
+    display: block;
+    color: #000;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  /* line 114, ../../sass/module/_news_640_module.scss */
+  .events-index .events-index-block li .event-index-img-warp {
+    height: auto;
+    overflow: hidden;
+  }
+  /* line 118, ../../sass/module/_news_640_module.scss */
+  .events-index .events-index-block li img {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* line 126, ../../sass/module/_news_640_module.scss */
+  .events-list {
+    width: 100%;
+    margin: 20px auto;
+  }
+  /* line 129, ../../sass/module/_news_640_module.scss */
+  .events-list li {
+    margin: 10px 0 30px 0;
+  }
+  /* line 132, ../../sass/module/_news_640_module.scss */
+  .events-list .events-list-img {
+    width: 100%;
+    display: inline-block;
+    margin-right: 15px;
+  }
+  /* line 136, ../../sass/module/_news_640_module.scss */
+  .events-list .events-list-img img {
+    width: 100%;
+  }
+  /* line 140, ../../sass/module/_news_640_module.scss */
+  .events-list .events-list-info {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+  }
+
+  /*設計師首頁區塊*/
+  /* line 7, ../../sass/module/_stylist_640_module.scss */
+  .stylist-index {
+    position: relative;
+    box-sizing: border-box;
+  }
+  /* line 12, ../../sass/module/_stylist_640_module.scss */
+  .stylist-index .page-index-title h1, .stylist-index .page-index-title h2 {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  /* line 18, ../../sass/module/_stylist_640_module.scss */
+  .stylist-index .page-index-title h1 {
+    margin-left: 0;
+    left: 0;
+  }
+  /* line 23, ../../sass/module/_stylist_640_module.scss */
+  .stylist-index .page-index-title h2 {
+    margin-left: 0;
+    left: 0;
+  }
+
+  /* line 30, ../../sass/module/_stylist_640_module.scss */
+  .stylist-index-block-warp {
+    width: 238px;
+    margin: 0 auto;
+    position: initial;
+  }
+
+  /* line 36, ../../sass/module/_stylist_640_module.scss */
+  .stylist-index-block {
+    width: 213px;
+    margin: 30px auto;
+    min-height: 0;
+  }
+  /* line 41, ../../sass/module/_stylist_640_module.scss */
+  .stylist-index-block .stylist-index-block-img {
+    max-height: 410px;
+    width: 100%;
+  }
+  /* line 45, ../../sass/module/_stylist_640_module.scss */
+  .stylist-index-block .stylist-index-block-img span {
+    bottom: -20px;
+  }
+  /* line 50, ../../sass/module/_stylist_640_module.scss */
+  .stylist-index-block .stylist-index-block-info {
+    margin-top: 35px;
+  }
+  .stylist-index-block {
+    position: relative;
+    height: 540px;
+}
+
+  /* line 56, ../../sass/module/_stylist_640_module.scss */
+  .stylist-index::before {
+    content: '';
+    top: 30%;
+    height: 40vh;
+  }
+
+  /* line 62, ../../sass/module/_stylist_640_module.scss */
+  .stylist-index-block-navigation {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+  }
+  /* line 63, ../../sass/module/_stylist_640_module.scss */
+  .stylist-index-block-navigation a {
+    line-height: 38px;
+  }
+
+  /* line 73, ../../sass/module/_stylist_640_module.scss */
+  .stylist-index-block-flex-prev {
+    left: 0;
+  }
+
+  /* line 77, ../../sass/module/_stylist_640_module.scss */
+  .stylist-index-block-flex-next {
+    right: 0;
+  }
+
+  /* line 81, ../../sass/module/_stylist_640_module.scss */
+  .stylist-style-list {
+    width: 100%;
+  }
+
+  /* line 85, ../../sass/module/_stylist_640_module.scss */
+  .stylist-block .stylist-index-block {
+    width: 96%;
+    margin: 0 auto;
+  }
+  /* line 89, ../../sass/module/_stylist_640_module.scss */
+  .stylist-block .stylist-index-block li {
+    margin: 10px 2%;
+    width: 46%;
+    float: left;
+  }
+
+  /* line 96, ../../sass/module/_stylist_640_module.scss */
+  .stylist-banner {
+    width: 100%;
+  }
+  /* line 99, ../../sass/module/_stylist_640_module.scss */
+  .stylist-banner img {
+    width: 100%;
+  }
+
+  /* line 104, ../../sass/module/_stylist_640_module.scss */
+  .stylist-info {
+    position: relative;
+    margin-top: 0;
+    width: 100%;
+  }
+
+  /* line 110, ../../sass/module/_stylist_640_module.scss */
+  .stylist-info-content {
+    padding-left: 0;
+    margin-top: 30px;
+    width: 100%;
+  }
+  /* line 114, ../../sass/module/_stylist_640_module.scss */
+  .stylist-info-content table {
+    width: 95%;
+  }
+  /* line 115, ../../sass/module/_stylist_640_module.scss */
+  .stylist-info-content td {
+    padding: 10px;
+    vertical-align: top;
+    line-height: 180%;
+    font-weight: 500;
+  }
+
+  /* line 123, ../../sass/module/_stylist_640_module.scss */
+  .stylist-info-content header {
+    width: 100%;
+  }
+  /* line 126, ../../sass/module/_stylist_640_module.scss */
+  .stylist-info-content header h1 {
+    margin: 30px;
+  }
+
+  /* line 131, ../../sass/module/_stylist_640_module.scss */
+  .stylist-info-img {
+    width: 90%;
+    margin: 0 auto;
+    float: none !important;
+    background: #fff;
+  }
+  /* line 136, ../../sass/module/_stylist_640_module.scss */
+  .stylist-info-img img {
+    max-height: 445px;
+  }
+
+  /* line 143, ../../sass/module/_stylist_640_module.scss */
+  .stylist-info-social {
+    height: 30px;
+    width: 90vw;
+    text-align: center;
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  /* line 152, ../../sass/module/_stylist_640_module.scss */
+  .stylist-info-demo {
+    width: 90vw;
+    margin: 0 auto 80px auto;
+  }
+
+  /* line 158, ../../sass/module/_stylist_640_module.scss */
+  .stylist-info-detail-demo li {
+    width: calc(50% - 5px);
+    height: 0;
+    padding-bottom: calc(50% - 5px);
+    margin-bottom: 5px;
+  }
+  /* line 159, ../../sass/module/_stylist_640_module.scss */
+  .stylist-info-detail-demo li img {
+    height: auto;
+  }
+  /* line 164, ../../sass/module/_stylist_640_module.scss */
+  .stylist-info-detail-demo li:last-child {
+    margin-right: 0;
+  }
+
+  /* line 167, ../../sass/module/_stylist_640_module.scss */
+  .stylist-info-detail {
+    width: 100%;
+    margin: 15px auto;
+    padding-top: 12px;
+    border-top: 1px solid #f3f3f3;
+  }
+  /* line 173, ../../sass/module/_stylist_640_module.scss */
+  .stylist-info-detail .stylist-info-detail-title, .stylist-info-detail .html-content {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  /* line 178, ../../sass/module/_stylist_640_module.scss */
+  .stylist-info-detail .html-content {
+    font-size: 100%;
+  }
+
+  /* line 187, ../../sass/module/_stylist_640_module.scss */
+  .stylist-info-detail-title {
+    font-size: 121%;
+    font-weight: 500;
+    color: #000;
+    text-align: left;
+    margin-bottom: 15px;
+  }
+
+  /* line 195, ../../sass/module/_stylist_640_module.scss */
+  .stylist-social-block {
+    width: 100%;
+    margin: 0 auto;
+    color: #000;
+    padding-top: 50px;
+  }
+
+  /* line 202, ../../sass/module/_stylist_640_module.scss */
+  .stylist-social-block-fb {
+    width: 100%;
+  }
+
+  /* line 206, ../../sass/module/_stylist_640_module.scss */
+  .stylist-social-block-ig {
+    width: 100%;
+  }
+
+  /*造型列表*/
+  /* line 211, ../../sass/module/_stylist_640_module.scss */
+  .stylist-style-list {
+    padding: 0;
+    width: 95vw;
+  }
+  /* line 215, ../../sass/module/_stylist_640_module.scss */
+  .stylist-style-list li {
+    width: 50%;
+    margin: 0;
+    padding: 2.5vw;
+  }
+  /* line 220, ../../sass/module/_stylist_640_module.scss */
+  .stylist-style-list li img {
+    width: 100%;
+  }
+  /* line 225, ../../sass/module/_stylist_640_module.scss */
+  .stylist-style-list li:hover {
+    box-shadow: rgba(153, 153, 153, 0.6) 0px 0px 2px;
+    box-shadow: rgba(153, 153, 153, 0.6) 0px 0px 2px;
+    box-shadow: rgba(153, 153, 153, 0.6) 0px 0px 2px;
+  }
+  /* line 229, ../../sass/module/_stylist_640_module.scss */
+  .stylist-style-list .stylist-style-info {
+    margin-top: 10px;
+  }
+  /* line 232, ../../sass/module/_stylist_640_module.scss */
+  .stylist-style-list .stylist-style-info p {
+    text-align: left;
+    line-height: 150%;
+  }
+
+  /* line 3, ../../sass/module/_sales_640_module.scss */
+  .salon-index {
+    padding-right: 5vw;
+    box-sizing: border-box;
+  }
+  /* line 8, ../../sass/module/_sales_640_module.scss */
+  .salon-index .page-index-title h1, .salon-index .page-index-title h2 {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  /* line 14, ../../sass/module/_sales_640_module.scss */
+  .salon-index .page-index-title h1 {
+    margin-left: 0;
+    left: 0;
+  }
+  /* line 19, ../../sass/module/_sales_640_module.scss */
+  .salon-index .page-index-title h2 {
+    margin-left: 0;
+    left: 0;
+  }
+
+  /* line 26, ../../sass/module/_sales_640_module.scss */
+  .salon-index-block {
+    margin-top: 20px;
+    width: 100%;
+    margin: 20px auto;
+  }
+  /* line 31, ../../sass/module/_sales_640_module.scss */
+  .salon-index-block li {
+    display: block;
+    float: left;
+    width: 44vw;
+    height: 44vw;
+  }
+  /* line 37, ../../sass/module/_sales_640_module.scss */
+  .salon-index-block li span {
+    width: 80%;
+    font-size: 80%;
+    left: 10%;
+  }
+  /* line 44, ../../sass/module/_sales_640_module.scss */
+  .salon-index-block .stylist-index-block-info {
+    color: #000;
+    font-weight: 500;
+    padding: 2vw;
+  }
+
+  /* line 52, ../../sass/module/_sales_640_module.scss */
+  .salon-data-map {
+    margin-top: 50px;
+    width: 100%;
+  }
+  /* line 55, ../../sass/module/_sales_640_module.scss */
+  .salon-data-map #map {
+    width: 100%;
+    height: 272px;
+  }
+
+  /* line 58, ../../sass/module/_sales_640_module.scss */
+  .salon-data-info {
+    width: 100%;
+    color: #000;
+    margin-top: 20px;
+    text-align: center;
+  }
+  /* line 64, ../../sass/module/_sales_640_module.scss */
+  .salon-data-info table {
+    width: 70%;
+    display: inline-block;
+    text-align: left;
+    line-height: 180%;
+    font-size: 85%;
+  }
+  /* line 72, ../../sass/module/_sales_640_module.scss */
+  .salon-data-info th {
+    width: 30%;
+    vertical-align: super;
+  }
+  /* line 77, ../../sass/module/_sales_640_module.scss */
+  .salon-data-info td {
+    vertical-align: super;
+    line-height: 120%;
+    padding: 2px;
+    padding-bottom: 7px;
+  }
+
+  /* line 85, ../../sass/module/_sales_640_module.scss */
+  .salon-map {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  /* line 90, ../../sass/module/_sales_640_module.scss */
+  .salon-map #map {
+    width: 100%;
+    height: 50vh;
+  }
+
+  /* line 97, ../../sass/module/_sales_640_module.scss */
+  .salon-info .salon-info-right {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  /* line 104, ../../sass/module/_sales_640_module.scss */
+  .salon-bigone {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+  }
+
+  /* line 110, ../../sass/module/_sales_640_module.scss */
+  .salon-content {
+    margin-top: 20px;
+    width: 100%;
+    min-height: 100vh;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+
+  /* line 118, ../../sass/module/_sales_640_module.scss */
+  .salon-content-event {
+    margin-top: 20px;
+    font-size: 85%;
+    width: 100%;
+  }
+
+  /* line 124, ../../sass/module/_sales_640_module.scss */
+  .salon-min-block {
+    margin: 0 auto 100px auto;
+    width: 100%;
+    text-align: center;
+  }
+  /* line 129, ../../sass/module/_sales_640_module.scss */
+  .salon-min-block iframe {
+    width: 100%;
+  }
+
+  /* line 135, ../../sass/module/_sales_640_module.scss */
+  .solon-adbanner img {
+    width: 100%;
+  }
+
+  /* line 39, ../../sass/index.scss */
+  .flex-control-nav {
+    display: none;
+  }
+
+  /* line 40, ../../sass/index.scss */
+  .header-bigone::after {
+    content: '';
+    display: none;
+  }
+}

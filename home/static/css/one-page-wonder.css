@@ -5,7 +5,7 @@
  */
 
 body {
-  font-family: 'Lato';
+ font-family: Arial, Meiryo,"文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", sans-serif
 }
 
 h1,
@@ -59,8 +59,6 @@ header.masthead {
   overflow: hidden;
   padding-top: calc(7rem + 72px);
   padding-bottom: 7rem;
-  background: -webkit-gradient(linear, left bottom, left top, from(#ff6a00), to(#ee0979));
-  background: linear-gradient(0deg, #ff6a00 0%, #ee0979 100%);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
@@ -161,4 +159,74 @@ header.masthead .bg-circle-4 {
 .btn-secondary:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 106, 0, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(255, 106, 0, 0.5);
+}
+
+.fashion {
+  width: 146px;
+  height: 170px;
+}
+
+.recommend {
+  width: 100px;
+  height: 150px;
+}
+
+.news {
+    padding: 6px;
+}
+
+/* unvisited link */
+a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+}
+
+/* selected link */
+a:active {
+  color: black;
+}
+
+.sale {
+  width: 300px;
+    height: 110px;
+}
+
+@media only screen and (max-width: 600px) {
+  .col-4 {
+      -ms-flex: 0 0 33.333333%;
+      flex: 0 0 33.333333%;
+      max-width: 61.333333%;
+  }
+  .col-3 {
+      -ms-flex: 0 0 25%;
+      flex: 0 0 25%;
+      max-width: 50%;
+  }
+
+  .header {
+    padding-top:100px;
+  }
+}
+
+.hot {
+  width: 200px;
+    height: 300px;
+}
+
+.map {
+  widows: 200px;
+  height: 200px;
+}
+
+.header {
+  padding-top:10px;
 }

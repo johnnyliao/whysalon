@@ -22,7 +22,7 @@ from django.utils.translation import ugettext_lazy as _
 ADMIN_MENU_ORDER = (
    ("Site", ("sites.Site", "redirects.Redirect", "conf.Setting")),
    (_(u"使用者設定"), ("account.User")),
-   (_(u"首頁設定"), ("home.IndexBanner", "home.IndexFashion", "home.IndexNews", "home.IndexRecommend", "home.IndexSale", "home.IndexHot", "home.IndexMap", )),
+   (_(u"首頁設定"), ("home.IndexBanner", "home.IndexFashion", "home.IndexNews", "home.IndexRecommend", "home.IndexSale", "home.IndexHot", "home.DesignerDemo", "home.IndexMap", )),
 )
 
 # A three item sequence, each containing a sequence of template tags

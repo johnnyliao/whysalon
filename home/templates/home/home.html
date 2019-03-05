@@ -1,0 +1,532 @@
+{% load staticfiles %}
+
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!--FB META-->
+    <meta property="og:title" content="Fashion salon WHY Hair" />
+
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}?v={{timestamp}}">
+    <!-- 主CSS -->
+    <link rel="stylesheet" href="{% static "css/magnific-popup.css" %}?v={{timestamp}}">
+    <link rel="stylesheet" href="{% static "css/style.css" %}?v={{timestamp}}">
+    <link rel="stylesheet" href="{% static "css/flexslider.css" %}?v={{timestamp}}">
+    <link rel="stylesheet" href="{% static "css/superslides.css" %}?v={{timestamp}}">
+    <link rel="stylesheet" href="{% static "css/index.css" %}?v={{timestamp}}">
+    <link rel="stylesheet" href="{% static "css/swiper.min.css" %}?v={{timestamp}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+<style>
+    .swiper-container{
+        background-color: black;
+        padding: 0;
+        margin: 0;
+    }
+    .swiper-wrapper{
+        margin: 0;
+        padding: 0px;
+    }
+    .swiper-wrapper img{
+
+    }
+    .swiper-button-next{
+        background-image: none;
+        left: auto;
+        right: 2%;
+        font-size: 36px;
+        opacity: 0.2;
+    }
+    .swiper-button-prev{
+        background-image: none;
+        left: 2%;
+        right: auto;
+        font-size: 36px;
+        opacity: 0.2;
+    }
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover{opacity: 1;}
+</style>
+    
+
+</head>
+<body>
+    <div class="container-top-warp">
+        <header id="header">
+            <div class="header-top-warp clear">
+                <aside class="right header-top-search">
+                    <!--<a href="/search"><i class="fa fa-search"></i></a>-->
+                </aside>
+                <div class="header-logo btn-imglink left">
+                    <a href="/" class="hidden-xs"  no-repeat">WHY Hair</a>
+                    <form action="/search" method="get" name="searchform" class="hidden-md">
+                        <input type="text" class="form-control" name="id" placeholder="Search" onkeypress="return SubmitEnter(this,event)">
+                    </form>
+                </div>
+
+                    <aside class="right header-top-login">
+                        <a href="/MemberBox/Login?ReturnUrl=%2f" class="js-popup">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <p>會員登入</p><p>Login</p>
+                        </a>
+                    </aside>
+
+
+            </div>
+            <div class="header-sub-warp hidden-md">
+                <a href="/"><img src="../../static/img/about-logo.jpg"></a>
+            </div>
+            
+   <div class="swiper-container">
+        <div class="swiper-wrapper">
+                
+                {% for banner in banners %}
+                  <div class="swiper-slide">
+                <a href="{{banner.link}}">
+                <img src="{{banner.banner.url}}" title="{{banner.name}}" style="width: 100%" /></a>
+                </div>
+                {% endfor %}
+       </div>
+        <div class="swiper-button-next"><i style="color:black" class="fa fa-chevron-circle-right" aria-hidden="true"></i></div>
+        <div class="swiper-button-prev"><i style="color:black" class="fa fa-chevron-circle-left" aria-hidden="true"></i></div>
+    </div>
+
+
+
+            <div class="header-warp">
+                <nav class="mainmenu">
+                    <ul class="mainmenu-menu">
+                        <!-- <li class="mainmenu-menu-nav rshow"><div><a href="/search">站內搜尋<span class="mainmenu-menu-nav-sub">Search</span></a></div></li> -->
+                        <li class="mainmenu-menu-nav"><div><a href="/about">About<span class="mainmenu-menu-nav-sub">品牌介紹</span></a></div></li>
+                        <li class="mainmenu-menu-nav">
+                            <div>
+                                <a href="/news">
+                                    News<span class="mainmenu-menu-nav-sub">熱門訊息</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="mainmenu-menu-nav">
+                            <div>
+                                <a href="/stylist/list">
+                                    Stylist<span class="mainmenu-menu-nav-sub">設計師</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="mainmenu-menu-nav"><div><a href="/salon">Salon<span class="mainmenu-menu-nav-sub">服務據點</span></a></div></li>
+                        <li class="mainmenu-menu-nav"><div><a href="/hairstyle">Hair Style<span class="mainmenu-menu-nav-sub">流行趨勢</span></a></div></li>
+                        <li class="mainmenu-menu-nav"><div><a href="/hairstyle">Recruitment<span class="mainmenu-menu-nav-sub">人才招募</span></a></div></li>
+                        <li class="mainmenu-menu-nav"><div><a href="http://www.myhappy.com.tw/Reservation" target="_blank">Reservation<span class="mainmenu-menu-nav-sub">線上預約</span></a></div></li>
+                            <li class="mainmenu-menu-nav rshow"><div><a href="/MemberBox/Login?ReturnUrl=%2f" class="js-popup">登入<span class="mainmenu-menu-nav-sub">Login</span></a></div></li>
+                            <li class="mainmenu-menu-nav rshow"><div><a href="/MemberBox/Register?ReturnUrl=%2f" class="js-popup">註冊<span class="mainmenu-menu-nav-sub">Registered</span></a></div></li>
+                    </ul>
+                </nav>
+            </div>
+            <span class="toggle"><i class="fa fa-bars" aria-hidden="true"></i></span>
+            
+        </header>
+        <div class="bread">
+            <ul>
+                
+            </ul>
+        </div>
+    </div>
+    <div id="container">
+        
+           
+<div class="container-warp" style="padding-bottom: 20px;"
+>
+    <section class="index-block hairstylist-index">
+        <header class="page-index-title">
+            <a class="" href="/hairstyle">
+                <h1>流行趨勢</h1>
+                <h2>Hair Style</h2>
+            </a>
+        </header>
+        
+        <ul class="hairstylist-index-block clear">
+        	{% for fashion in fashions %}
+                <li>
+			        <a href="/hairstyle/hairsingle/c6ff56e3-6422-4b3f-adca-4fe879e43b68" class="js-popup js-hairstyle">
+			            <img src="{{fashion.fashion.url }}">
+			            <span>{{fashion.title}}</span>
+			        </a>
+			    </li>
+    		{% endfor %}
+        </ul>
+
+    </section>
+
+    <section class="index-block clear">
+        <section class="index-half-block news-index">
+            <header class="page-index-title">
+                <a class="" href="/news/activity">
+                    <h1>最新消息</h1>
+                    <h2>News</h2>
+                </a>
+            </header>
+            <ul class="news-list">
+            	{% for new in news %}	
+                    <li><a href="{{new.link}}" class="js-popup">
+                    <span class="news-list-title">{{new.title|slice:":20"}}</span>
+                    <span class="news-list-date" style="letter-spacing: 0">{{new.updated}}</span></a></li>
+                {% endfor %}
+
+                    
+            </ul>
+        </section>
+        <section class="index-half-block hairsnap-index">
+                <header class="page-index-title">
+                    <a class="" href="/hairstyle/memberstyle">
+                        <h1>網友推薦</h1>
+                        <h2>Hairsnap</h2>
+                    </a>
+                </header>
+                <ul class="hairsnap-index-block clear">
+                	{% for recommend in recommends %}
+                        <li><a href="{{recommend.link}}" class="js-popup"><img src="{{recommend.recommend.url }}"></a></li>
+                    {% endfor %} 
+                </ul>
+            </section>
+    </section>
+    <section class="index-block events-index">
+        <header class="page-index-title">
+            <a class="" href="/news/events">
+                <h1>優惠活動</h1>
+                <h2>Events</h2>
+            </a>
+        </header>
+        <ul class="events-index-block">
+        	{% for sale in sale_result %}
+                <li>
+                    <a href="/news/eventsone/19bb70c5-90be-4023-89ea-f89ffa7d5cb3" class="js-popup">
+                        <h3>{{sale.title}}</h3>
+                        <div class="event-index-img-warp"><img src="{{sale.sale.url}}"></div>
+                    </a>
+                </li>
+             {% endfor %}  
+        </ul>
+    </section>
+    <section class="index-block stylist-index">
+        <header class="page-index-title">
+            <a href="/stylist/list" >
+            <h1>熱門設計師</h1>
+            <h2>Stylist</h2>
+            </a>
+        </header>
+        <div class="stylist-index-block-warp">
+            <ul class="stylist-index-block slides clear" style="overflow: hidden">
+            	{% for hot in hot_result %}
+                    <li style="margin-bottom: 10%">
+                        <div class="stylist-index-block-img">
+                            <a href="/home/detail?id={{hot.id}}" rel="ajax:modal">
+                                <img src="{{hot.hot.url}}">
+                            </a><span><a href="http://www.myhappy.com.tw/Reservation/009/Sinnie" target="_blank">立即預約</a></span>
+                        </div>
+
+                        <div class="stylist-index-block-info">
+                            <p class="stylist-info-name">{{hot.title}}</p>
+                            <p class="stylist-info-store">{{hot.des}}</p>
+                        </div>
+                    </li>
+                {% endfor %}  
+            </ul>
+            <div class="stylist-index-block-navigation">
+                <a href="#" class="stylist-index-block-flex-prev flex-prev"><i class="fa fa-chevron-circle-left"></i></a>
+                <a href="#" class="stylist-index-block-flex-next flex-next"><i class="fa fa-chevron-circle-right"></i></a>
+            </div>
+
+            <!--<div class="myModal">
+              <div id="hot_detail"></div>
+            </div>-->
+        </div>
+
+
+    </section>
+
+    <section class="index-block salon-index">
+        <header class="page-index-title">
+            <a href="/salon">
+            <h1>服務據點</h1>
+            <h2>Salon</h2>
+            </a>
+        </header>
+        <ul class="salon-index-block clear">
+        	{% for map in map_result %}
+                <li><a href="{{map.link}}"><img src="{{map.map_img.url}}"><span>{{map.title}}</span></a></li>
+            {% endfor %}    
+
+        </ul>
+    </section>
+   
+    
+</div>
+
+        <footer id="footer">
+            <div class="clear footer-content">
+                <div class="footer-left left">
+                    <div class="footer-content-logo btn-imglink"><a href="/index">happyhair</a></div>
+                    <div>
+                        <a href="https://play.google.com/store/apps/details?id=com.videohya.happyhair&hl=zh-TW" target="_blank" class="btn-imglink"><img src="/static/img/btn_google.jpg" /></a>
+                        <a href="https://itunes.apple.com/tw/app/kuai-le-fa-xing-shu/id521047809?mt=8" target="_blank" class="btn-imglink"><img src="/static/img/btn_apple.jpg" /></a>
+                    </div>
+                    <div class="footer-content-share-icon">
+                        <a href="https://www.facebook.com/ALLHAPPYHAIR" class="btn-imglink" target="_blank"><i class="icon icon-fb"></i></a>
+                        <a href="https://line.me/R/ti/p/%40zca7494t" class="btn-imglink" target="_blank"><i class="icon icon-line"></i></a>
+                        <a href="https://www.instagram.com/all_happyhair/" class="btn-imglink" target="_blank"><i class="icon icon-ig"></i></a>
+                    </div>
+                    <hr />
+                    <div class="footer-content-copyright">
+                        <p>Copyright © 2016 HAPPYHAIR, All right reserved.</p>
+                        <p>台北市八德路四段768巷1弄20號5樓</p>
+                        <p>電話：0800-062-888</p>
+                    </div>
+                </div>
+                <div class="footer-right right">
+                    <div class="footer-edm">
+                        <span>訂閱/取消電子報</span>
+                        <input type="text" id="edm" placeholder="請輸入電子信箱" style="padding-left: 10px;">
+                        <a class="btn js-edm" href="#">送出</a>
+                    </div>
+                    <ul class="footer-content-nav">
+                        <li><a href="/about">品牌介紹</a></li>
+                        <li>
+                            <a href="/news">熱門訊息</a>
+                            <ul>
+                                <li><a href="/news/activity">最新消息</a></li>
+                                <li><a href="/news/events">優惠活動</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/stylist">設計師 &nbsp;&nbsp;</a>
+                        </li>
+                        <li><a href="/salon">美麗據點</a></li>
+                        <li>
+                            <a href="/hairstyle">流行趨勢</a>
+                            <ul>
+                                <li><a href="/hairstyle/0">短髮</a></li>
+                                <li><a href="/hairstyle/1">長髮</a></li>
+                                <li><a href="/hairstyle/2">中長髮</a></li>
+                                <li><a href="/hairstyle/3">直髮</a></li>
+                                <li><a href="/hairstyle/4">捲髮</a></li>
+                                <li><a href="/hairstyle/5">創意/編髮</a></li>
+                                <li><a href="/hairstyle/6">男士髮型</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer-nav-recome"><a href="/recome"><img src="/static/img/recome.svg"></a></li>
+                        <li>
+                            <a href="/memberbox/contact" class="js-popup">聯絡我們</a>
+                            <ul>
+                                <li><a href="http://www.myhappy.com.tw/Reservation" target="_blank">線上預約</a></li>
+                                <li><a href="http://www.104.com.tw/jobbank/custjob/index.php?r=cust&j=623a436b4846406a30683b1d1d1d1d5f2443a363189j50" target="_blank">人才招募</a></li>
+                                <li><a href="https://www.beautylabs.com.tw" target="_blank">沙龍髮品</a></li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="footer-bottom">建議使用Chrome瀏覽器/解析度1280x800以上-以達到最佳瀏覽體驗</div>
+
+        </footer>
+    </div>
+
+    <!--<a href="#" class="btn-imglink btn-top">Top</a>-->
+    <script src="{% static "js/jquery-1.10.2.min.js"%}?v={{timestamp}}"></script>
+    <script src="{% static "js/scripts.js"%}?v={{timestamp}}"></script>
+    <script src="{% static "js/rwd.js"%}?v={{timestamp}}"></script>
+    <script src="{% static "js/ajaxcontent.js"%}?v={{timestamp}}"></script>
+    <script src="{% static "js/jquery.magnific-popup.min.js"%}?v={{timestamp}}"></script>
+    <script src="{% static "js/jquery.validate.min.js"%}?v={{timestamp}}"></script>
+    <script src="{% static "js/jquery.validate.unobtrusive.min.js"%}?v={{timestamp}}"></script>
+    <script src="{% static "js/jquery.flexslider.js"%}?v={{timestamp}}"></script>
+    <script src="{% static "js/ofi.min.js"%}?v={{timestamp}}"></script>
+    <script src="{% static "js/picturefill.min.js"%}?v={{timestamp}}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script>
+    $(document).on('click', '.js-popup', function (e) {
+        e.preventDefault();
+        var item = $(this);
+        var oriurl = '/';
+        var url = $(this).prop('href');
+        $(this).magnificPopup({
+            type: 'ajax',
+            alignTop: true,
+            overflowY: 'scroll',
+            showCloseBtn: true,
+            fixedContentPos: true,
+            closeOnBgClick: false,
+            callbacks: {
+                open: function () {
+                    console.log(oriurl);
+                    history.pushState({ page: url }, url, url);
+                },
+                updateStatus: function (data) {
+                    if ($('.hairbox-img-block') && data.status == 'ready') {
+                        $('.hairbox-img-block').flexslider({slideshowSpeed: 4000});
+                    }
+                    getFavorite();
+                },
+                close: function () {
+                    console.log(oriurl);
+                    history.pushState({ page: oriurl }, oriurl, oriurl);
+                }
+            }
+        }).magnificPopup('open');
+    });
+
+
+
+    $('.js-edm').on('click', function (e) {
+        e.preventDefault();
+        if ($('#edm').val()) {
+            $.post('/memberapi/setEdm', { email: $('#edm').val() }, function (data) { if (data.code == "200") { alert('訂閱/取消電子報成功!') } else { alert(data.message); } });
+        } else {
+            alert('請輸入電子信箱');
+        }
+    });
+
+
+    $(window).bind("popstate", function (e) {
+        var state = event.state;
+        if (state) {
+            updateSite(state.page);
+        }
+    });
+
+    function updateSite(currentPage) {
+        location.href = currentPage;
+    }
+
+    $(function () {
+        objectFitImages();
+    });
+
+    $( document ).ready(function() {
+	    $('a[rel="ajax:modal"]').click(function(event) {
+	    	console.log("ddddddddddd")
+		  $.ajax({url: $(this).attr('href'), success: function(result){
+		  	console.log(result)
+		    $("#hot_detail").empty()
+		      	$("#hot_detail").html(result);
+		      	$("#myModal").modal();
+		  }});
+		  return false;
+		});
+	});
+    </script>
+
+<script src="{% static "js/swiper.min.js"%}?v={{timestamp}}"></script>
+<script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+//            effect: 'fade',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    <script src="{% static "js/imagesloaded.min.js"%}?v={{timestamp}}"></script>
+    <script src="{% static "js/jquery.superslides.js"%}?v={{timestamp}}"></script>
+    <script>
+        $(window).load(function () {
+            if ($(window).width() > 1169) {
+                $('.stylist-index-block-warp').flexslider({
+                    animation: "slide",
+                    slideshow: true,
+                    controlNav: false,
+                    itemWidth: 213,
+                    maxItems: 5,
+                    itemMargin: 0,
+                    slideshowSpeed: 5000,
+                    customDirectionNav: $(".stylist-index-block-navigation a")
+                });
+                $('.header-bigone').superslides({
+                    hashchange: false,
+                    play: 6000
+                });
+            } else {
+                $('.stylist-index-block-warp').flexslider({
+                    animation: "slide",
+                    slideshow: true,
+                    slideshowSpeed: 5000,
+                    customDirectionNav: $(".stylist-index-block-navigation a")
+                });
+                $('.header-bigone').flexslider({
+                    animation: "slide",
+                    slideshow: true,
+                    slideshowSpeed: 6000,
+                    controlNav: false
+                });
+                $('.slides-container').show();
+                $('.slides-navigation').hide();
+            }
+        });
+
+
+    </script>
+
+
+    <script>
+        
+    </script>
+    <script>
+    
+    </script>
+    <script type="text/javascript">
+    var _fout_queue = _fout_queue || {}; if (_fout_queue.segment === void 0) _fout_queue.segment = {};
+    if (_fout_queue.segment.queue === void 0) _fout_queue.segment.queue = [];
+
+    _fout_queue.segment.queue.push({
+        'user_id': 16190,
+        'advertiser_id': 4341,
+        'contractor_id': 5
+    });
+
+    (function () {
+        var el = document.createElement('script'); el.type = 'text/javascript'; el.async = true;
+        el.src = (('https:' == document.location.protocol) ? 'https://' : 'http://') + 'js.fout.jp/segmentation.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(el, s);
+    })();
+    </script>
+
+    <script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 854566179;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */
+    </script>
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+    </script>
+    <noscript>
+        <div style="display:inline;">
+            <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/854566179/?guid=ON&amp;script=0" />
+        </div>
+    </noscript>
+
+</body>
+</html>
